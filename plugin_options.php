@@ -48,8 +48,7 @@ class Gameroom_options {
         wp_enqueue_style( $handle, plugins_url( "/dist/static/css/main.css", __FILE__ ), false, '0.1', 'all' );
       } else {
         $handle .= 'dev';
-        wp_enqueue_script( $handle, 'http://localhost:3000/main.js', $dep, '0.1', true );
-        wp_enqueue_style( $handle, 'http://localhost:3000/main.css', false, '0.1', 'all' );
+        wp_enqueue_script( $handle, 'http://localhost:3000/static/js/bundle.js', $dep, '0.1', true );
       }
     }
   }
