@@ -13,7 +13,7 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "prod": "node ./scripts.js",
+    "prod": "node ./scripts.js && npm run postbuild",
     "postbuild": "node ./postScripts.js"
   },
   "eslintConfig": {
